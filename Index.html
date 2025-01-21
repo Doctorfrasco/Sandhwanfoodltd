@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Our Restaurant</h1>
+    <div class="item">
+        <div>
+            <h3>Margherita Pizza</h3>
+            <p>Price: ₹250</p>
+        </div>
+        <button onclick="addToCart('Margherita Pizza', 250)">Add to Cart</button>
+    </div>
+    <div class="item">
+        <div>
+            <h3>Veggie Delight</h3>
+            <p>Price: ₹300</p>
+        </div>
+        <button onclick="addToCart('Veggie Delight', 300)">Add to Cart</button>
+    </div>
+    <div class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <p class="total">Total: ₹<span id="totalAmount">0</span></p>
+        <a id="payNowLink" href="#" class="button">Pay Now</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
